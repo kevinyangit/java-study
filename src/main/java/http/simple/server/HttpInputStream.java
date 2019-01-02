@@ -1,8 +1,14 @@
 package http.simple.server;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 
+/**
+ * @author Administrator
+ *
+ */
 public class HttpInputStream {
 	InputStream in;
 
@@ -12,7 +18,9 @@ public class HttpInputStream {
 	}
 
 	public String readHttpLine() throws IOException{
-
-		return null;
+		InputStreamReader inputStreamReader = new InputStreamReader(in);
+		BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+		String readLine = bufferedReader.readLine();
+		return readLine;
 	}
 }
