@@ -2,9 +2,19 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>info.kevin</groupId>
-	<artifactId>study</artifactId>
+	<artifactId>java-study</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
+			<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.10</version>
+		</dependency>
+			<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>4.1.10</version>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -12,9 +22,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.csource</groupId>
-			<artifactId>fastdfs-client-java</artifactId>
-			<version>1.27-SNAPSHOT</version>
+		    <groupId>cn.bestwu</groupId>
+		    <artifactId>fastdfs-client-java</artifactId>
+		    <version>1.27</version>
 		</dependency>
 	</dependencies>
 	<build>
