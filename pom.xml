@@ -4,13 +4,25 @@
 	<groupId>info.kevin</groupId>
 	<artifactId>java-study</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<oracle.version>10.2.0.5.0</oracle.version>
+	</properties>
 	<dependencies>
-			<dependency>
+
+		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.16.10</version>
 		</dependency>
-			<dependency>
+<!-- 		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc14</artifactId>
+			<version>10.2.0.5.0</version>
+			<type>jar</type>
+		</dependency> -->
+		<dependency>
 			<groupId>cn.hutool</groupId>
 			<artifactId>hutool-all</artifactId>
 			<version>4.1.12</version>
@@ -66,9 +78,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-		    <groupId>cn.bestwu</groupId>
-		    <artifactId>fastdfs-client-java</artifactId>
-		    <version>1.27</version>
+			<groupId>cn.bestwu</groupId>
+			<artifactId>fastdfs-client-java</artifactId>
+			<version>1.27</version>
 		</dependency>
 	</dependencies>
 	<build>
