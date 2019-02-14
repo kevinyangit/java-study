@@ -1,29 +1,18 @@
 package ioc;
 
-import java.io.InputStream;
 import java.net.URL;
-import java.net.URLConnection;
 
-public class ResourceLoader  implements Resource{
-	/**
-	   * 类库URL
+/**资源加载器
+ * @author guangfeng.yang
+ *
+ */
+public class ResourceLoader  {
+	
+	 /**
+	   * 给定一个位置， 使用累加器的资源加载URL，并创建一个“资源URL”对象，便于获取输入流
 	   */
-	  private  URL url;
-
-	  /**
-	   * 需要一个类库URL
-	   */
-	  public ResourceLoader(URL url) {
-	    this.url = url;
-	  }
-
-	  /**
-	   * 从URL中获取输入流
-	   */
-	  @Override
-	  public InputStream getInputstream() throws Exception {
-	    URLConnection urlConnection = url.openConnection();
-	    urlConnection.connect();
-	    return urlConnection.getInputStream();
+	  public ResourceUrl getResource(String location) {
+	    URL url = this.getClass().getClassLoader().getResource(location);
+	    return new ResourceUrl(url);
 	  }
 }
