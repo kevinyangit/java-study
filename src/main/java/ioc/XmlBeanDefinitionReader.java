@@ -25,7 +25,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader{
 	    ResourceLoader resourceloader = new ResourceLoader();
 	    // 从资源加载器中获取输入流
 	    InputStream inputstream = resourceloader.getResource(location).getInputstream();
-	    // 获取文档建造者工厂实例
+	    // 获取文档建造者工厂实例, 用的是官方自带的w3c的xml解析工具，而不是dom4j
 	    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 	    // 工厂创建文档建造者
 	    DocumentBuilder docBuilder = factory.newDocumentBuilder();
