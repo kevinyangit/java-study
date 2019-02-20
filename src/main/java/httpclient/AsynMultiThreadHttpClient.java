@@ -70,6 +70,8 @@ public class AsynMultiThreadHttpClient {
 		        @Override
 		        protected void onCharReceived(final CharBuffer buf, final IOControl ioctrl) throws IOException {
 		            // Do something useful
+		        	//获取的每个字符
+		        	System.out.println("consumer");
 		        }
 
 		        @Override
