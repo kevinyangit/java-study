@@ -32,7 +32,7 @@ public class FileTest {
 	}
 	@Test
 	public void newCreateFileIfDirecoryMake() throws IOException{
-		File file = new File("c:/aa/a.txt");
+		File file = new File("/home/weblogic/bqjrfile/als2017/fcimg/fc/pic/2017/06/29/15/20170629151530_35908482.jpg");
 		boolean exists = file.exists();
 		if(!file.getParentFile().exists()){
 			file.getParentFile().mkdirs();

@@ -108,7 +108,7 @@ public class AsycPerfPostClient
     	}
     }
     
-	/*//TODO:
+	/*
 	 * method : Post request ，还可以自己写支持application/json的格式
 	 * Content-type : application/x-www-form-urlencoded
 	 */
