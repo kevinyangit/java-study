@@ -1,7 +1,9 @@
 package clone.shadow;
 
-import org.junit.Test;
 
+import static org.junit.Assert.*;
+
+import org.junit.Test;
 /**浅复制
  * @author guangfeng.yang
  *
